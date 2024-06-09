@@ -1,0 +1,26 @@
+{
+  // インデント
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  // 自動挿入した空白は削除する
+  "editor.trimAutoWhitespace": true,
+  // 文字コード
+  "files.encoding": "utf8",
+  // 改行コード
+  "files.eol": "\n",
+  // 1行80文字以内に折り返すこと
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [
+    80
+  ],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#afafaf",
+  },
+  // 行末に自動改行を入れる
+  "files.insertFinalNewline": true,
+  // ファイルの自動整形を有効化
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+}

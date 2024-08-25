@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
-  </head>
-  <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
-  </body>
-  <script src="./renderer.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src 'self';" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src 'self';" />
+  <meta name="viewport" content="width=device-width">
+  <title>Calculators for Network Engineer</title>
+  <link rel="stylesheet" href="./pure-min.css">
+</head>
+
+<body>
+  <form id="form" class="pure-form pure-g">
+    <div class=" pure-u-1-8">
+      <!-- 空 -->
+    </div>
+    <div class="pure-u-3-4" id="">
+      <input id="input" type="text" class="pure-input-1" autofocus />
+    </div>
+    <div class="pure-u-1-8">
+      <button class="pure-button pure-button-primary pure-input-1" type="submit">=</button>
+    </div>
+    <div class="pure-u-1-8">
+      <select id="prefix" class="pure-input-1">
+        <option>0x</option>
+        <option>0o</option>
+        <option>&nbsp;&nbsp;</option>
+        <option>0b</option>
+      </select>
+    </div>
+    <div class="pure-u-3-4">
+      <input id="result" type="text" class="pure-input-1" />
+    </div>
+    <div class="pure-u-1-8">
+      <select id="suffix" class="pure-input-1">
+        <option>TB</option>
+        <option>GB</option>
+        <option>MB</option>
+        <option>KB</option>
+        <option>&nbsp;&nbsp;</option>
+      </select>
+    </div>
+  </form>
+</body>
+
+<script src="./renderer.js"></script>
+
 </html>
